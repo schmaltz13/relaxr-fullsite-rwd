@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  font-family: Open Sans, sans-serif;
+  font-weight: 300;
+}
+.container {
+  width: 980px;
+  height: inherit;
+  margin: 0 auto;
+}
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu-item {
+  margin: 0 10px;
+  display: inline-block;
+  font-weight: 300;
+  font-size: 22px;
+  list-style-type: none;
+}
+.first-paragraph:first-of-type:first-letter {
+  float: left;
+  padding-top: 4px;
+  padding-right: 8px;
+  padding-left: 3px;
+  font-weight: 600;
+  font-size: 80px;
+  line-height: 65px;
+}
+.read-more, .read-less {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  text-align: right;
+}
+.read-more a, .read-less a {
+  font-weight: 600;
+}
+.more-content {
+  display: none;
+}
+#learnmore {
+  margin-top: 10px;
+  margin-bottom: 30px;
+  font-weight: 600;
+  font-size: 22px;
+}
+#yellow {
+  height: 100px;
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#social {
+  width: 80px;
+  margin: auto;
+  background-color: inherit;
+  display: flex;
+  justify-content: space-between;
+}
+body {
+  background-color: #f0efef;
+}
+header {
+  height: 80px;
+}
+h1 {
+  font-weight: 800;
+  font-size: 30px;
+  color: #ffffff;
+}
+main {
+  padding-top: 80px;
+  display: flex;
+  align-items: flex-start;
+}
+section {
+  width: 700px;
+  margin-right: 40px;
+  display: inline-block;
+}
+h2 {
+  font-weight: 600;
+  font-size: 40px;
+}
+img {
+  margin: 30px 0;
+}
+a {
+  text-decoration: none;
+}
+a:visited {
+  color:inherit;
+}
+article {
+  border-bottom: solid 1px gray;
+  margin-bottom: 50px;
+}
+article p {
+  font-size: 24px;
+  color: gray;
+  line-height: 36px;
+}
+aside {
+  width: 240px;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+}
+h3, h4 {
+  font-weight: 800;
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+h4 {
+  margin-top: 30px;
+}
+aside p {
+  font-size: 20px;
+}
+button {
+  width: 200px;
+  border: none;
+  border-radius: 5px;
+  padding: 15px;
+  font-weight: 800;
+  font-size: 15px;
+  text-align: center;
+  color: #ffffff;
+}
+footer {
+  background-color: #121212;
+  text-align: center;
+}
+h5 {
+  padding: 50px 0 20px 0;
+  font-weight: 800;
+  font-size: 30px;
+}
+div img {
+  height: 20px;
+}
+footer p{
+  padding-top: 30px;
+  padding-bottom: 50px;
+  font-weight: 600;
+  font-size: 9px;
+  color: #ffffff;
+}
