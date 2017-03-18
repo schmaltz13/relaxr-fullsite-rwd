@@ -14,12 +14,15 @@
 //     $parent.siblings('.read-more').show();
 //   });
 // }
+$( document ).ready(function() {
+  $('#menu').click(function() {
+    $('.menu-item').toggleClass('active');
+    $('.header').toggleClass('tall');
+  });
+});
+
 var $readmore = $('.read-more')
 var $readless = $('.read-less')
-
-$( document ).ready(function() {
-    console.log( "Ready!" );
-});
 
 $readmore.click(expand)
 $readless.click(collapse)

@@ -4,15 +4,20 @@
   font-weight: 300;
 }
 .container {
-  width: 980px;
-  height: inherit;
+  width: 80%;
   margin: 0 auto;
 }
 .header {
+  height: 133px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center;
+}
+.header.tall {
+  height: 300px;
+}
+#menu {
+  display: none;
 }
 .menu-item {
   margin: 0 10px;
@@ -20,6 +25,9 @@
   font-weight: 300;
   font-size: 22px;
   list-style-type: none;
+}
+.menu-item.active {
+  display: block;
 }
 .first-paragraph:first-of-type:first-letter {
   float: left;
@@ -64,29 +72,32 @@
 body {
   background-color: #f0efef;
 }
-header {
-  height: 80px;
-}
 h1 {
+  margin-top: 45px;
   font-weight: 800;
   font-size: 30px;
   color: #ffffff;
 }
+ul {
+  margin: 50px 0;
+  line-height: 30px;
+  cursor: pointer;
+}
 main {
   padding-top: 80px;
   display: flex;
-  align-items: flex-start;
+  justify-content: space-between;
 }
 section {
-  width: 700px;
+  width: 70%;
   margin-right: 40px;
-  display: inline-block;
 }
 h2 {
   font-weight: 600;
   font-size: 40px;
 }
 img {
+  width: 100%;
   margin: 30px 0;
 }
 a {
@@ -105,8 +116,9 @@ article p {
   line-height: 36px;
 }
 aside {
-  width: 240px;
+  width: 25%;
   font-size: 20px;
+  line-height: 36px;
   display: flex;
   flex-direction: column;
 }
@@ -120,6 +132,9 @@ h4 {
 }
 aside p {
   font-size: 20px;
+}
+aside img {
+  width: 100%;
 }
 button {
   width: 200px;
@@ -141,12 +156,55 @@ h5 {
   font-size: 30px;
 }
 div img {
+  width: auto;
   height: 20px;
 }
 footer p{
   padding-top: 30px;
   padding-bottom: 50px;
   font-weight: 600;
-  font-size: 9px;
+  font-size: 10px;
   color: #ffffff;
+}
+
+/*media queries*/
+
+@media (max-width: 1000px) {
+  h2 {
+    font-size: 30px;
+  }
+  h3, h4 {
+    font-size: 28px;
+  }
+  article p, aside a, aside p {
+    font-size: 18px;
+    line-height: 30px;
+  }
+  #learnmore {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 768px){
+  #menu {
+    display: block;
+    cursor: pointer;
+  }
+  .menu-item {
+    display: block;
+    text-align: right;
+    display: none;
+  }
+  main {
+    flex-flow: wrap column;
+  }
+  section {
+    width: 100%;
+  }
+  aside {
+    width: 100%;
+  }
+  aside img {
+    display: none;
+  }
 }
